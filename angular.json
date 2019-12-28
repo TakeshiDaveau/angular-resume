@@ -38,12 +38,17 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -130,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "tda-resume"
+  "defaultProject": "tda-resume",
+  "cli": {
+    "analytics": false
+  }
 }
