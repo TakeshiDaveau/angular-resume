@@ -9,12 +9,27 @@
       "projectType": "application",
       "prefix": "tda",
       "schematics": {
-        "@schematics/angular:component": {
-          "prefix": "tda",
-          "styleext": "scss"
+        "@schematics/angular:class": {
+          "spec": false
         },
         "@schematics/angular:directive": {
-          "prefix": "tda"
+          "spec": false
+        },
+        "@schematics/angular:guard": {
+          "spec": false
+        },
+        "@schematics/angular:module": {
+          "spec": false
+        },
+        "@schematics/angular:pipe": {
+          "spec": false
+        },
+        "@schematics/angular:service": {
+          "spec": false
+        },
+        "@schematics/angular:component": {
+          "styleext": "scss",
+          "spec": false
         }
       },
       "architect": {

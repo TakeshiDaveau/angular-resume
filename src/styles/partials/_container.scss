@@ -1,1 +1,6 @@
 @import '../modules/all';
+
+.tda-container {
+  max-width: $tda-breakpoint-s + 1px;
+  margin: auto;
+}

@@ -1,4 +1,10 @@
 @import '../modules/all';
-body {
+html, body {
   @extend %reset-margin-padding;
+}
+body {
+  font-family: $font-base;
+  color: $color-font;
+  background-image: $color-background;
+  background-repeat: no-repeat;
 }
