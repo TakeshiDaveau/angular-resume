@@ -11,3 +11,13 @@
 .tda-contact-skills-wrapper {
   width: $space-left-width;
 }
+
+.tda-main-wrapper {
+  padding: $space-base;
+  flex-grow: 2;
+}
+.tda-main-section {
+  background-color: #fff;
+  padding: 2 * $space-base;
+  margin-bottom: $space-base;
+}
