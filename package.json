@@ -7,8 +7,12 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
+    "build:staging": "ng build --prod",
+    "build:production": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
+    "lint-fix": "export NODE_OPTIONS=--max_old_space_size=4096 && npm run lint -- --fix=true",
+    "stylelint": "stylelint 'src/**/*.scss'",
     "e2e": "ng e2e",
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
@@ -30,6 +34,7 @@
     "@nguniversal/module-map-ngfactory-loader": "v8.2.6",
     "core-js": "^3.6.1",
     "express": "^4.15.2",
+    "protractor": "^5.4.2",
     "rxjs": "^6.5.4",
     "rxjs-compat": "^6.5.4",
     "tslib": "^1.10.0",
@@ -55,7 +60,6 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.5.1",
     "prettier": "^1.19.1",
-    "protractor": "~5.4.2",
     "protractor-image-comparison": "^3.9.0",
     "sass-mq": "^5.0.1",
     "stylelint": "^12.0.1",
@@ -73,5 +77,10 @@
     "last 2 version",
     "> 1%",
     "IE 10-11"
-  ]
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint-fix && npm run stylelint"
+    }
+  }
 }
