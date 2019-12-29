@@ -1,0 +1,39 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
+/bin/migration
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Scripts
+*.sh
+*.py
+
+# Environment file
+.env
+
+# Firebase auth
+*.fire-auth.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+.prettierignore
+.gitignore
