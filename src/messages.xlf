@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="cebd4db04e26a8272b3d6d92087a851d150ecfa0" datatype="html">
+        <source>Takeshi Daveau</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/header/header.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1ef6c13a05464c8507e97f7d57e19a07e0e9582d" datatype="html">
+        <source>Lead developer Javascript</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/header/header.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="208c5fdb7247b5477bf45478408d91962e11cff6" datatype="html">
+        <source>
+      Hello, I&apos;m Takeshi Daveau, I&apos;m a lead developper specialized in making rich internet
+      application.
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/header/header.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
