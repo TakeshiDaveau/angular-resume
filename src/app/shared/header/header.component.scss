@@ -1,19 +1,24 @@
 @import '../../../styles/modules/all';
 
 .tda-header {
+  position: relative;
   width: calc(100% - #{2 * $space-base});
-  display: flex;
   background: #fff;
   padding: 2 * $space-base $space-base;
 }
 
 .tda-header__avatar-container {
-  width: 25%;
+  min-width: calc(#{$space-left-width} - #{2 * $space-base});
+  max-width: calc(#{$space-left-width} - #{2 * $space-base});
   text-align: center;
+  padding-right: $space-base;
 }
 .tda-header__avatar {
   border-radius: 50%;
   border: 5px solid rgba($color-primary, 0.7);
+  display: inline-block;
+  max-width: 70%;
+  width: auto;
 }
 
 .tda-header__title-container {

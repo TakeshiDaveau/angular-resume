@@ -1,0 +1,49 @@
+@import '../../../styles/modules/all';
+
+.tda-cs-item-content {
+  padding-bottom: 2 * $space-base;
+  border-bottom: 2px solid $color-accent-light;
+  flex-grow: 1;
+  max-width: calc(100% - #{4 * $space-base});
+  p {
+    margin: 0;
+  }
+  address {
+    font-style: normal;
+  }
+}
+.tda-cs-item-content__less {
+  font-weight: bold;
+  color: $color-accent-light;
+}
+
+.tda-contact-skills {
+  background-color: $color-accent;
+  font-family: $font-title;
+  color: #fff;
+}
+.tda-cs-item {
+  padding: $space-base 0 $space-base 0;
+  display: flex;
+  &:first-child {
+    padding-top: 2 * $space-base;
+  }
+  &:last-child {
+    padding-bottom: 0;
+    .tda-cs-item-content {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+.tda-cs-item-title {
+  width: 2 * $space-base;
+  padding: 0 $space-base;
+  span {
+    text-indent: -999px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    height: 0;
+  }
+}

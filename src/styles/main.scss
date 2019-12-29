@@ -15,7 +15,14 @@
 @include font-face('Roboto', '/assets/fonts/roboto/roboto-light', 300, normal);
 @include font-face('Roboto', '/assets/fonts/roboto/roboto-lightitalic', 300, italic);
 @include font-face('Roboto Slab', '/assets/fonts/roboto-slab/roboto-slab-regular', 400, normal);
+@include font-face('Material Icons', '/assets/fonts/material-icons/material-icons-regular');
 
 @import './partials/all';
 
+@import './vendors/material-icons';
+
 // Override
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
