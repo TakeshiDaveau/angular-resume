@@ -1,3 +1,43 @@
 /*
 * Please do not import this file directly, import the "_all.scss" file instead
 */
+@import '../../../node_modules/sass-mq/mq';
+
+// Breakpoints material
+$tda-breakpoint-xx-small: 370px;
+$tda-breakpoint-xs: 599px;
+$tda-breakpoint-s: 959px;
+$tda-breakpoint-m: 1279px;
+$tda-breakpoint-l: 1919px;
+
+
+// To enable support for browsers that do not support @media queries,
+// (IE <= 8, Firefox <= 3, Opera <= 9) set $mq-responsive to false
+// Create a separate stylesheets served exclusively to these browsers,
+// meaning @media queries will be rasterized, relying on the cascade itself
+$mq-responsive: true;
+
+// Name your breakpoints in a way that creates a ubiquitous language
+// across team members. It will improve communication between
+// stakeholders, designers, developers, and testers.
+$mq-breakpoints: (
+  mobile: $tda-breakpoint-xs,
+  tablet: $tda-breakpoint-s,
+  desktop: $tda-breakpoint-m,
+  wide: $tda-breakpoint-l,
+  // Tweakpoints
+  miniMobile: $tda-breakpoint-xx-small,
+  //desktopAd: $tda-breakpoint-mid-small,
+  //mobileLandscape: 480px
+);
+
+// Define the breakpoint from the $mq-breakpoints list that should
+// be used as the target width when outputting a static stylesheets
+// (i.e. when $mq-responsive is set to 'false').
+//$mq-static-breakpoint: desktop;
+
+// If you want to display the currently active breakpoint in the top
+// right corner of your site during development, add the breakpoints
+// to this list, ordered by width, e.g. (mobile, tablet, desktop).
+//$mq-show-breakpoints: (mobile, mobileLandscape, tablet, desktop, wide);
+//$mq-show-breakpoints: (mobile, tablet, desktop, wide);

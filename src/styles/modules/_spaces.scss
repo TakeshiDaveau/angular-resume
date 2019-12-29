@@ -1,3 +1,9 @@
 /*
 * Please do not import this file directly, import the "_all.scss" file instead
 */
+$space-base: 12px;
+
+%reset-margin-padding {
+  margin: 0;
+  padding: 0;
+}

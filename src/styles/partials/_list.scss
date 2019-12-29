@@ -1,0 +1,8 @@
+@import '../modules/all';
+ul {
+  @extend %reset-margin-padding;
+}
+ul > li {
+  @extend %reset-margin-padding;
+  list-style: none;
+}

@@ -169,8 +169,8 @@
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
     "directive-class-suffix": true,
-    "directive-selector": [true, "attribute", "ses", "camelCase"],
-    "component-selector": [true, "element", "ses", "kebab-case"],
+    "directive-selector": [true, "attribute", "tda", "camelCase"],
+    "component-selector": [true, "element", "tda", "kebab-case"],
     "no-commented-code": false,
     "parameters-max-number": false
   }
