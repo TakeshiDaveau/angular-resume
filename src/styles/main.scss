@@ -2,7 +2,6 @@
 
 @import './modules/all';
 
-
 // Add font-faces, not the most optimized, must add in index.html, for each font loaded :
 // <link
 //      as="font"
@@ -15,7 +14,4 @@
 @include font-face('Roboto', '/assets/fonts/roboto/roboto-bold', 700, normal);
 @include font-face('Roboto', '/assets/fonts/roboto/roboto-light', 300, normal);
 @include font-face('Roboto', '/assets/fonts/roboto/roboto-lightitalic', 300, italic);
-
-
-
-
+@include font-face('Roboto Slab', '/assets/fonts/roboto-slab/roboto-slab-regular', 400, normal);
