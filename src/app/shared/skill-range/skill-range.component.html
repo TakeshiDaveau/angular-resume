@@ -1,1 +1,8 @@
-<p>skill-range works!</p>
+<span
+  class="tda-skill-range"
+  [attr.aria-valuemin]="min"
+  [attr.aria-valuemax]="max"
+  [attr.aria-valuenow]="value"
+>
+  <span class="tda-skill-range__marker" [ngStyle]="{ left: percentage + '%' }"></span>
+</span>

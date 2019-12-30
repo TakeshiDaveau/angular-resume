@@ -8,6 +8,10 @@
   p {
     margin: 0;
   }
+  *:not(.tda-cs-item-content__less) {
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: auto;
+  }
   address {
     font-style: normal;
   }
@@ -17,7 +21,7 @@
   color: $color-accent-light;
 }
 
-.tda-contact-skills {
+.tda-cs {
   background-color: $color-accent;
   font-family: $font-title;
   color: #fff;
@@ -46,4 +50,8 @@
     display: block;
     height: 0;
   }
+}
+
+.tda-cs-skills-list {
+  padding-right: 2 * $space-base;
 }

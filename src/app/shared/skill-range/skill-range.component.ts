@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'tda-skill-range',
@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skill-range.component.scss']
 })
 export class SkillRangeComponent implements OnInit {
+  @Input() value: number;
+  @Input() min: number;
+  @Input() max: number;
+  percentage: number;
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.percentage = Math.round((this.value / (this.max - this.min)) * 100);
+  }
 }
