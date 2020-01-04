@@ -1,2 +1,9 @@
 @import '../modules/all';
 
+a {
+  color: #039be5;
+  transition: 0.3s;
+}
+a:hover {
+  color: #03a8f3;
+}

@@ -5,6 +5,7 @@
   border-bottom: 2px solid $color-accent-light;
   flex-grow: 1;
   max-width: calc(100% - #{4 * $space-base});
+  font-weight: 300;
   p {
     margin: 0;
   }
@@ -22,6 +23,7 @@
 }
 
 .tda-cs {
+  min-height: 100%;
   background-color: $color-accent;
   font-family: $font-title;
   color: #fff;

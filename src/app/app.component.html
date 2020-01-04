@@ -6,8 +6,24 @@
     </aside>
     <div role="main" class="tda-main-wrapper">
       <section id="work" class="tda-card tda-main-section">
-        <h3>Work Experiences</h3>
-        lorem ipsum
+        <tda-list>
+          <tda-list-title>
+            <h3><i class="material-icons">done_all</i><span>Work Experiences</span></h3>
+          </tda-list-title>
+          <tda-list-item *ngFor="let work of WORK_EXPERIENCE">
+            <img
+              *ngIf="work.src"
+              [src]="work.src"
+              class="tda-list-item__icon"
+              i18n-alt
+              alt="Company logo"
+            />
+            <h4 class="tda-list-item__title" i18n [innerHTML]="work.title"></h4>
+            <p class="tda-list-item__subtitle" i18n [innerHTML]="work.subtitle"></p>
+            <p class="tda-list-item__content" i18n [innerHTML]="work.content"></p>
+            <aside i18n [innerHTML]="work.aside"></aside>
+          </tda-list-item>
+        </tda-list>
       </section>
       <section id="education" class="tda-card tda-main-section"></section>
       <section id="interests" class="tda-card tda-main-section"></section>

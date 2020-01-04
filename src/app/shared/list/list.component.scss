@@ -1,0 +1,58 @@
+@import '../../../styles/modules/all';
+
+$space-left-icon: $space-base * 4;
+$width-icon: 30px;
+$height-icon: $width-icon;
+
+.tda-list {
+  padding: $space-base * 5 $space-base * 2 $space-base * 2 $space-base * 2;
+}
+
+.tda-list-title {
+  h3 {
+    position: relative;
+    margin-bottom: $space-base;
+    padding-left: $space-left-icon;
+    & > i {
+      position: absolute;
+      left: 0;
+      font-size: 30px;
+      line-height: 41px;
+    }
+  }
+}
+.tda-list-item {
+  padding-left: $space-left-icon;
+  position: relative;
+  aside {
+    color: $color-primary;
+    position: absolute;
+    right: 0;
+    top: $space-base;
+    font-size: $space-base + 2;
+    font-family: $font-title;
+    font-weight: 400;
+    -webkit-font-smoothing: initial;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+.tda-list-item__icon {
+  position: absolute;
+  left: 0;
+  top: $space-base / 2;
+  width: $width-icon;
+  height: $height-icon;
+  border-radius: 2px;
+}
+.tda-list-item__title {
+  color: $color-primary;
+  font-size: $space-base * 2 - ($space-base / 3);
+  position: relative;
+}
+.tda-list-item__subtitle {
+  @extend %reset-margin-padding;
+  color: #000;
+}
+.tda-list-item__content {
+  margin-top: 0;
+}

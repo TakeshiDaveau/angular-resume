@@ -9,7 +9,8 @@
 }
 
 .tda-contact-skills-wrapper {
-  width: $space-left-width;
+  min-width: $space-left-width;
+  max-width: $space-left-width;
 }
 
 .tda-main-wrapper {
