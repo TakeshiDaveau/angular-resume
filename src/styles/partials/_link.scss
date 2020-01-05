@@ -1,10 +1,10 @@
 @import '../modules/all';
 
 a:not(.tda-cs-item) {
-  color: #039be5;
+  color: $color-link;
   transition: 0.3s;
   text-decoration: none;
 }
 a:not(.tda-cs-item):hover {
-  color: #03a8f3;
+  color: darken($color-link, 8%);
 }

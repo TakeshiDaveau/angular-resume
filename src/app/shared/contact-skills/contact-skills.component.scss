@@ -46,7 +46,7 @@
   min-height: 100%;
   background-color: $color-accent;
   font-family: $font-title;
-  color: #fff;
+  color: $color-accent-font;
 }
 .tda-cs-item {
   padding: 2 * $space-base 0 0 0;
@@ -61,7 +61,7 @@
     }
   }
   &[href] {
-    color: #fff;
+    color: $color-accent-font;
     text-decoration: none;
   }
   &[href]:hover {
