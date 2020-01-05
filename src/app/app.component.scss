@@ -24,4 +24,7 @@
   h3 {
     font-size: $space-base * 2.5;
   }
+  &:last-child {
+    margin-bottom: $space-base / 3;
+  }
 }

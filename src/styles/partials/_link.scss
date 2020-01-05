@@ -1,9 +1,10 @@
 @import '../modules/all';
 
-a {
+a:not(.tda-cs-item) {
   color: #039be5;
   transition: 0.3s;
+  text-decoration: none;
 }
-a:hover {
+a:not(.tda-cs-item):hover {
   color: #03a8f3;
 }
