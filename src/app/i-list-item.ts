@@ -1,7 +1,7 @@
 export interface IListItem {
   title: string;
-  subtitle: string;
-  content: string;
-  aside: string;
+  content?: string;
+  aside?: string;
+  subtitle?: string;
   src?: string;
 }

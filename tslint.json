@@ -125,7 +125,8 @@
     "prefer-switch": [true],
     "quotemark": [
       true,
-      "single"
+      "single",
+      "avoid-escape"
     ],
     "radix": true,
     "restrict-plus-operands": true,

@@ -8,7 +8,7 @@
       <section id="work" class="tda-card tda-main-section">
         <tda-list>
           <tda-list-title>
-            <h3><i class="material-icons">done_all</i><span>Work Experiences</span></h3>
+            <h3><i class="material-icons">done_all</i><span i18n>Work Experiences</span></h3>
           </tda-list-title>
           <tda-list-item *ngFor="let work of WORK_EXPERIENCE">
             <img
@@ -19,14 +19,84 @@
               alt="Company logo"
             />
             <h4 class="tda-list-item__title" i18n [innerHTML]="work.title"></h4>
-            <p class="tda-list-item__subtitle" i18n [innerHTML]="work.subtitle"></p>
-            <p class="tda-list-item__content" i18n [innerHTML]="work.content"></p>
-            <aside i18n [innerHTML]="work.aside"></aside>
+            <p
+              *ngIf="work.subtitle"
+              class="tda-list-item__subtitle"
+              i18n
+              [innerHTML]="work.subtitle"
+            ></p>
+            <p
+              *ngIf="work.content"
+              class="tda-list-item__content"
+              i18n
+              [innerHTML]="work.content"
+            ></p>
+            <aside *ngIf="work.aside" i18n [innerHTML]="work.aside"></aside>
           </tda-list-item>
         </tda-list>
       </section>
-      <section id="education" class="tda-card tda-main-section"></section>
-      <section id="interests" class="tda-card tda-main-section"></section>
+      <!-- Educational background -->
+      <section id="education" class="tda-card tda-main-section">
+        <tda-list class="tda-list-ladder">
+          <tda-list-title>
+            <h3><i class="material-icons">school</i><span i18n>Education</span></h3>
+          </tda-list-title>
+          <tda-list-item *ngFor="let project of EDUCATION">
+            <img
+              *ngIf="project.src"
+              [src]="project.src"
+              class="tda-list-item__icon"
+              i18n-alt
+              alt="Company logo"
+            />
+            <h4 class="tda-list-item__title" i18n [innerHTML]="project.title"></h4>
+            <p
+              *ngIf="project.subtitle"
+              class="tda-list-item__subtitle"
+              i18n
+              [innerHTML]="project.subtitle"
+            ></p>
+            <p
+              *ngIf="project.content"
+              class="tda-list-item__content"
+              i18n
+              [innerHTML]="project.content"
+            ></p>
+            <aside *ngIf="project.aside" i18n [innerHTML]="project.aside"></aside>
+          </tda-list-item>
+        </tda-list>
+      </section>
+      <!-- Personal projects -->
+      <section id="personal" class="tda-card tda-main-section">
+        <tda-list>
+          <tda-list-title>
+            <h3><i class="material-icons">person_pin</i><span i18n>Personal projects</span></h3>
+          </tda-list-title>
+          <tda-list-item *ngFor="let project of PERSONAL_PROJECTS">
+            <img
+              *ngIf="project.src"
+              [src]="project.src"
+              class="tda-list-item__icon"
+              i18n-alt
+              alt="Company logo"
+            />
+            <h4 class="tda-list-item__title" i18n [innerHTML]="project.title"></h4>
+            <p
+              *ngIf="project.subtitle"
+              class="tda-list-item__subtitle"
+              i18n
+              [innerHTML]="project.subtitle"
+            ></p>
+            <p
+              *ngIf="project.content"
+              class="tda-list-item__content"
+              i18n
+              [innerHTML]="project.content"
+            ></p>
+            <aside *ngIf="project.aside" i18n [innerHTML]="project.aside"></aside>
+          </tda-list-item>
+        </tda-list>
+      </section>
     </div>
   </main>
   <tda-footer></tda-footer>
