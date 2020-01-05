@@ -6,6 +6,7 @@
   flex-grow: 1;
   max-width: calc(100% - #{4 * $space-base});
   font-weight: 300;
+  position: relative;
   p {
     margin: 0;
   }
@@ -17,11 +18,25 @@
     font-style: normal;
   }
 }
+.tda-cs-item-content__list-icon,
 .tda-cs-item-content__less {
   font-weight: bold;
   color: $color-accent-light;
 }
 
+.tda-cs-item-content__list {
+  margin-left: -($space-base * 2);
+}
+.tda-cs-item-content__list-item {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+.tda-cs-item-content__list-icon {
+  font-size: $space-base * 3;
+  display: block;
+  margin: $space-base / 2;
+}
 .tda-cs {
   min-height: 100%;
   background-color: $color-accent;

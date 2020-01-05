@@ -13,7 +13,7 @@ export class AppComponent {
       title: 'Chief Technology Officier',
       subtitle: '<a href="https://artips.fr" target="_blank">Artips</a> // Paris, France',
       content:
-        'Management of the 6 developers, who works mainly on <a href="https://microlearning.artips.fr/" target="_blank">Antiseche</a>, and keep coding ;)',
+        'Management of the whole developers team, who works mainly on <a href="https://microlearning.artips.fr/" target="_blank">Antiseche</a>, and keep coding ;)',
       aside: 'Since Apr 2019'
     },
     {
