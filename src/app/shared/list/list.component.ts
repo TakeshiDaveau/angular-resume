@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, HostBinding, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'tda-list',
@@ -32,7 +32,8 @@ export class ListTitleComponent implements OnInit {
   selector: 'tda-list-item',
   template:
     '<div class="tda-list-item">' +
-    '<ng-content select=".tda-list-item__icon"></ng-content>' +
+    '<span *ngIf="ladder" class="tda-list-item__ladder"><span class="tda-list-item__ladder-bullet"></span></span>' +
+    '<ng-content *ngIf="!ladder" select=".tda-list-item__icon"></ng-content>' +
     '<ng-content select=".tda-list-item__title"></ng-content>' +
     '<ng-content select=".tda-list-item__subtitle"></ng-content>' +
     '<ng-content select=".tda-list-item__content"></ng-content>' +
@@ -41,6 +42,7 @@ export class ListTitleComponent implements OnInit {
   encapsulation: ViewEncapsulation.None
 })
 export class ListItemComponent implements OnInit {
+  @Input() ladder: boolean;
   constructor() {}
 
   ngOnInit() {}

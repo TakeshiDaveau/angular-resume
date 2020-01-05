@@ -41,7 +41,7 @@
           <tda-list-title>
             <h3><i class="material-icons">school</i><span i18n>Education</span></h3>
           </tda-list-title>
-          <tda-list-item *ngFor="let project of EDUCATION">
+          <tda-list-item *ngFor="let project of EDUCATION" [ladder]="true">
             <img
               *ngIf="project.src"
               [src]="project.src"

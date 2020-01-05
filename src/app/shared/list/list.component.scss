@@ -54,5 +54,30 @@ $height-icon: $width-icon;
   color: #000;
 }
 .tda-list-item__content {
-  margin-top: 0;
+  margin: 0;
+  padding-bottom: $space-base;
+}
+
+// Ladder
+.tda-list-item__ladder {
+  position: absolute;
+  left: 14px;
+  top: 8px;
+  height: 100%;
+  border-left: 3px solid #b39fd2;
+}
+.tda-list-item__ladder-bullet {
+  position: absolute;
+  left: -8px;
+  display: inline-block;
+  height: 8px;
+  width: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid $color-accent-light;
+}
+.tda-list-ladder > *:last-child {
+  .tda-list-item__ladder {
+    height: calc(100% - #{$space-base * 2});
+  }
 }
