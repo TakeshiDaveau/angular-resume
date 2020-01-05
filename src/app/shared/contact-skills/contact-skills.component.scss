@@ -31,11 +31,16 @@
   display: inline-block;
   width: 50%;
   text-align: center;
+  vertical-align: top;
 }
 .tda-cs-item-content__list-icon {
   font-size: $space-base * 3;
   display: block;
   margin: $space-base / 2;
+}
+.tda-cs-item-content__list-text {
+  display: inline-block;
+  height: 44px;
 }
 .tda-cs {
   min-height: 100%;

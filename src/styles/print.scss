@@ -1,0 +1,11 @@
+@import 'modules/all';
+
+@media print {
+  .tda-app {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .tda-footer {
+    display: none;
+  }
+}
