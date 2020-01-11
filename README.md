@@ -28,3 +28,4 @@ Run `npm run test:e2e` to execute the end-to-end tests via [Protractor](http://w
 * [ ] Auto deployement in production
 * [ ] Add Google Analytics
 * [ ] Better print with media queries
+* [ ] I18n with transloco https://www.newline.co/@isinai/this-holiday-season-give-yourself-the-gift-of-easy-angular-i18n-with-transloco!--cb577221

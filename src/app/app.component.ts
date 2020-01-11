@@ -30,7 +30,7 @@ export class AppComponent {
       subtitle:
         '<a href="https://cegedim.fr" target="_blank">Cegedim</a> // Boulogne Billancourt, France',
       content:
-        'Development of <a href="https://www.sybycegedim.com" target="_blank">SY by Cegedim</a>, a web portal for e-invoicing',
+        'Development of <a href="https://www.sybycegedim.com" target="_blank">SY by Cegedim</a>, a web portal for e-invoicing.',
       aside: 'Aug 2015 - May 2016'
     },
     {
