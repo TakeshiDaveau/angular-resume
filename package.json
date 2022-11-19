@@ -36,7 +36,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.900.0-rc.7",
+    "@angular-devkit/build-angular": "~15.0.0",
     "@angular/cli": "^9.0.0-rc.7",
     "@angular/compiler-cli": "^9.0.0-rc.7",
     "@angular/language-service": "^9.0.0-rc.7",
@@ -67,7 +67,7 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-plugin-prettier": "^2.1.0",
     "typescript": "~3.6.4",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.3.12"
   },
   "browserslist": [
     "last 2 version",
